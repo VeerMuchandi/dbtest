@@ -8,7 +8,7 @@ $dbpwd = 'veer';
 $dbname = 'veer'; 
 
 
-$connection = mysql_connect($dbhost.":".$dbport, $dbuser, $dbpwd);
+$connection = mysql_connect($dbhost, $dbuser, $dbpwd);
 
 if (!$connection) {
         echo "Could not connect to database";
