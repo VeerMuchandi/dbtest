@@ -1,2 +1,2 @@
 MAINTAINER Veer Muchandi veer@redhat.com
-COPY src/ /var/www/html/
+COPY src/* /var/www/html/
