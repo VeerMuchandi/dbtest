@@ -3,7 +3,7 @@ $dbhost = getenv("DATABASE_SERVICE_HOST");
 $dbport = getenv("DATABASE_SERVICE_PORT");
 $dbuser = 'veer';
 //$dbpwd = getenv("MYSQL_ROOT_PASSWORD");
-$dbname = 'veer';
+$dbname = 'sample';
 $dbpwd = 'veer';
  
 
