@@ -8,7 +8,7 @@ $dbpwd = 'veer';
  
 
 
-$connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwdi,$dbname) or die("Error " . mysqli_error($connection));
+$connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwd, $dbname) or die("Error " . mysqli_error($connection));
 
 
 $query = "SELECT * from users" or die("Error in the consult.." . mysqli_error($connection));
