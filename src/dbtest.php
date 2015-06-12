@@ -3,12 +3,12 @@ $dbhost = getenv("DATABASE_SERVICE_HOST");
 $dbport = getenv("DATABASE_SERVICE_PORT");
 $dbuser = 'veer';
 //$dbpwd = getenv("MYSQL_ROOT_PASSWORD");
-//$dbname = getenv("MYSQL_DATABASE");
+$dbname = 'veer';
 $dbpwd = 'veer';
-$dbname = 'veer'; 
+ 
 
 
-$connection = mysql_connect($dbhost, $dbuser, $dbpwd);
+$connection = mysql_connect($dbhost.":".$dbport, $dbuser, $dbpwd);
 
 if (!$connection) {
         echo "Could not connect to database";
