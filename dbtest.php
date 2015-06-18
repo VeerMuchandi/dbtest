@@ -18,6 +18,7 @@ $rs = $connection->query($query);
 while ($row = mysqli_fetch_assoc($rs)) {
     echo "User Id: ".$row['user_id'] . " User Name: " . $row['username'] . "<br>";
 }
+echo "End of the list <br>";
 
 mysqli_close($connection);
 
